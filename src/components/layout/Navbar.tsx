@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, Info, Phone, Menu, X } from 'lucide-react';
+import { Building2, Info, Phone, Menu, X, QuoteIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from "../../Images/aangan-nepal.png";
 
@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
     { path: "/properties", label: "Properties", icon: Building2 },
     { path: "/about", label: "About", icon: Info },
     { path: "/contact", label: "Contact", icon: Phone },
+    { path: "/faq", label: "FAQ", icon: QuoteIcon},
   ];
 
   const toggleMobileMenu = () => {
